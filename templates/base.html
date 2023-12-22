@@ -34,7 +34,13 @@
     <title>Mixer Masters {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- PAGE CONTENT -->
+    {% block content %}
+    {% endblock %}
     
+    <!-- CUSTOM SCRIPTS -->
+    {% block postloadjs %}
+    {% endblock %}
   </body>
 </html>
