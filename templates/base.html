@@ -67,6 +67,37 @@
           </div>
         </div>
       </div>
+      <!-- Info top bar end -->
+
+      <!-- Top Nav -->
+      <div class="py-4">
+        <div class="container-fluid">
+          <div id="topbar" class="row w-100 align-items-center">
+            <div class="col-xxl-2 col-lg-4 col-md-6 col-5">
+              <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <h2 class="logo-font text-black my-0"><strong>Mixer</strong> Masters</h2>
+            </a>
+            </div>
+            <div class="col-xxl-4 col-lg-4 d-none d-lg-block">
+              <form method="GET" action="#">
+                <div class="input-group">
+                   <input class="form-control" type="text" name="q" placeholder="Search products">
+                   <div class="input-group-append">
+                      <button class="form-control btn bg-white border border-start-0 rounded-0 rounded-end" type="submit">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                         </svg>
+                      </button>
+                   </div>
+                </div>
+             </form>
+            </div>
+            <div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Nav -->
     </header>
 
     <!-- PAGE CONTENT -->
