@@ -1,2 +1,14 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.info-bar {
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    z-index: 50;
+}

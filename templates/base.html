@@ -36,26 +36,22 @@
     <title>Mixer Masters {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
       <!-- Info top bar -->
-      <div class="info-bar text-sm bg-warning">
-        <div class="container-fluid px-lg-5 py-2">
+      <div class="info-bar bg-dark">
+        <div class="container-fluid px-lg-5 py-1">
           <div class="row align-items-center">
             <div class="col-md-4 d-none d-md-block">
               <ul class="list-inline mb-0">
                 <li class="list-inline-item me-2">
-                  <a href="#">
-                    <i class="fa-brands fa-square-facebook"></i>
-                  </a>
+                  <a class="text-reset" href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </li>
-                <li class="list-inline-item me-2">
-                  <a href="#">
-                    <i class="fa-brands fa-square-instagram"></i>
-                  </a>
+                <li class="list-inline-item me-4">
+                  <a class="text-reset" href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="col-sm-6 col-md-4 text-start text-md-center">
               <p class="mb-0">Free Delivery for orders over 750SEK</p>
             </div>
             <div class="col-sm-6 col-md-4 d-flex justify-content-end">
@@ -69,7 +65,7 @@
       </div>
       <!-- Info top bar end -->
 
-      <!-- Top Nav -->
+      <!-- Main Nav -->
       <div class="py-4">
         <div class="container-fluid">
           <div id="topbar" class="row w-100 align-items-center">
@@ -97,8 +93,17 @@
           </div>
         </div>
       </div>
-      <!-- End Top Nav -->
+      <!-- End Main Nav -->
     </header>
+
+    <!-- Messages -->
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+
+    <!-- Page headers -->
+    {% block page_header %}
+    {% endblock %}
 
     <!-- PAGE CONTENT -->
     {% block content %}
