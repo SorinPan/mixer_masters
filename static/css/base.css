@@ -47,6 +47,36 @@ h1, h2, h4 {
     color: var(--auburn) !important;
 }
 
+.subtitle {
+    text-transform: uppercase;
+    color: var(--auburn);
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/*-------- OTHER --------*/
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-outline-brown {
+    color: var(--auburn);
+    border: 1px solid var(--auburn);
+    transition: all 0.6s ease;
+}
+
+.btn-outline-brown:hover {
+    background-color: var(--auburn);
+}
+
 /*-------- NAV BAR --------*/
 
 .info-bar {
@@ -111,4 +141,18 @@ h1, h2, h4 {
   
 .input-group-underlined:focus .form-control-underlined, .input-group-underlined:hover .form-control-underlined {
     border-bottom-color: #212529;
+}
+
+/*-------- HERO --------*/
+
+.hero-container {
+    height: 85vh;
+    min-height: 600px;
+    color: var(--white);
+}
+
+.hero-cover {
+    background: url('/media/cocktail-prep.jpg') fixed;
+    width: 100%;
+    height: 100%;
 }
