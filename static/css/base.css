@@ -1,14 +1,114 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:wght@400;500;700&display=swap');
+
+/*-------- GLOBAL VARIABLES --------*/
+
+:root {
+    /*-------- Typography --------*/
+    --header-text: 'Raleway', sans-serif;
+    --body-text: 'Open Sans', sans-serif;
+    --body-text-size: 1rem;
+
+    /*-------- Colours --------*/
+    --white: #faf9f9;
+    --black: #04151F;
+    --grey: #484D5E;
+    --cosmos: #540B0E;
+    --auburn: #9E2A2B;
+    --yellow: #E09F3E;
+    --vanilla: #FFF3B0;
+}
 
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: var(--body-text);
+    font-size: var(--body-text-size);
+    color: var(--black);
+}
+
+/*-------- HEADINGS & TEXT --------*/
+h1, h2, h4 {
+    font-family: var(--header-text);
+}
+
+.text-small {
+    font-size: 0.875rem;
+}
+
+.text-primary {
+    color: var(--auburn) !important;
+}
+  
+.text-primary-hover:hover {
+    color: var(--auburn) !important;
+}
+
+/*-------- NAV BAR --------*/
+
 .info-bar {
     position: relative;
-    color: #fff;
+    color: var(--white);
     font-weight: 300;
     z-index: 50;
+}
+
+.navbar-toggler {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--auburn);
+}
+
+.form-control-underlined {
+    padding-left: 0;
+    transition: all .5s;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+  
+.form-control.form-control-underlined:focus {
+    border-color: #212529;
+    box-shadow: none;
+}
+
+.form-control.form-control-underlined:focus ~ .btn-underlined {
+    border-bottom-color: #212529;
+}
+
+.btn.btn-underlined {
+    transition: all .5s;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #ced4da;
+    border-left: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+  
+.btn.btn-underlined:focus {
+    box-shadow: none;
+}
+
+.input-group-underlined:focus .btn-underlined, .input-group-underlined:hover .btn-underlined {
+    border-bottom-color: #212529;
+}
+  
+.input-group-underlined:focus .form-control-underlined, .input-group-underlined:hover .form-control-underlined {
+    border-bottom-color: #212529;
 }

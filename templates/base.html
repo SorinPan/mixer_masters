@@ -36,29 +36,27 @@
     <title>Mixer Masters {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid">
+    <header class="header">
       <!-- Info top bar -->
-      <div class="info-bar bg-dark">
-        <div class="container-fluid px-lg-5 py-1">
-          <div class="row align-items-center">
+      <div class="info-bar text-small bg-dark">
+        <div class="container-fluid px-lg-5 py-2">
+          <div class="row d-flex align-items-center">
             <div class="col-md-4 d-none d-md-block">
               <ul class="list-inline mb-0">
                 <li class="list-inline-item me-2">
-                  <a class="text-reset" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a class="text-reset text-primary-hover" href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </li>
                 <li class="list-inline-item me-4">
-                  <a class="text-reset" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a class="text-reset text-primary-hover" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li class="list-inline-item me-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>010 123 567 0</span>
                 </li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-4 text-start text-md-center">
-              <p class="mb-0">Free Delivery for orders over 750SEK</p>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-end">
-              <div class="ps-3 ms-0">
-                <i class="fa-solid fa-phone"></i>
-                <span>010 123 567 0</span>
-              </div>
+              <p class="mb-0">Free Delivery for orders over 750$</p>
             </div>
           </div>
         </div>
@@ -66,17 +64,48 @@
       <!-- Info top bar end -->
 
       <!-- Main Nav -->
-      <nav class="navbar navbar-expand-lg bg-transparent border-0 shadow-0 navbar-light px-lg-5 z-index-20">
-        <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-black my-0"><strong>Mixer</strong> Masters</h2>  
+      <nav class="navbar navbar-expand-lg bg-light border-0 px-lg-5">
+        <a href="{% url 'home' %}" class="navbar-brand">
+          <h2 class="logo-font my-0"><strong>Mixer</strong> Masters</h2>  
         </a>
-        
+        <ul class="list-inline mb-0 d-block d-lg-none">
+          <li class="list-inline-item me-3 dropdown">
+            <a class="text-dark text-primary-hover" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-animated" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+                  {% if request.user.is_superuser %}
+                      <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                  {% endif %}
+                      <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                  {% else %}
+                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <li class="list-inline-item me-3">
+            <a class="text-dark text-primary-hover position-relative" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+            </a>
+          </li>
+          <li class="list-inline-item position-relative me-3">
+            <a class="text-dark text-primary-hover" href="#" data-bs-toggle="modal" data-bs-target="#sidebarCart">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
+        </button>
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mt-3 mt-lg-0">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-              <div class="dropdown-menu">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <div class="dropdown-menu" aria-labelledby="shopDropdown">
                 <a class="dropdown-item" href="#">By Price </a>
                 <a class="dropdown-item" href="#">By Rating </a>
                 <a class="dropdown-item" href="#">By Category </a>
@@ -85,66 +114,85 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
+              <a class="nav-link dropdown-toggle" id="accessoriesDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
+              <div class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                <a class="dropdown-item" href="#">Shakers </a>
+                <a class="dropdown-item" href="#">Mixing Tools </a>
+                <a class="dropdown-item" href="#">Bar Tools </a>
+                <a class="dropdown-item" href="#">All Accessories </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingredients</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
+              <a class="nav-link dropdown-toggle" id="ingredientsDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingredients</a>
+              <div class="dropdown-menu" aria-labelledby="ingredientsDropdown">
+                <a class="dropdown-item" href="#">Bitters & Mixers </a>
+                <a class="dropdown-item" href="#">Garnishes </a>
+                <a class="dropdown-item" href="#">Syrups & Sweeteners </a>
+                <a class="dropdown-item" href="#">All Ingredients </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinkware</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
+              <a class="nav-link dropdown-toggle" id="drinkwareDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinkware</a>
+              <div class="dropdown-menu" aria-labelledby="drinkwareDropdown">
+                <a class="dropdown-item" href="#">Cocktail Glasses </a>
+                <a class="dropdown-item" href="#">Wine Glasses </a>
+                <a class="dropdown-item" href="#">Shot Glasses </a>
+                <a class="dropdown-item" href="#">All Drinkware </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
-                <a class="dropdown-item" href="#">Subcategory </a>
+              <a class="nav-link dropdown-toggle" id="booksDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+              <div class="dropdown-menu" aria-labelledby="booksDropdown">
+                <a class="dropdown-item" href="#">Mixology </a>
+                <a class="dropdown-item" href="#">Bartending </a>
+                <a class="dropdown-item" href="#">All Books </a>
               </div>
             </li>
           </ul>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <form class="d-lg-flex ms-auto me-lg-5 me-xl-6 my-4 my-lg-0" method="GET" action="#">
-          <div class="input-group">
-            <input class="form-control ps-3" type="text" name="q" placeholder="Search Products">
-            <div class="input-group-append">
-              <button class="form-control btn bg-white border border-start-0 rounded-0 rounded-end" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
+          <form class="d-lg-flex ms-auto me-lg-5 me-xl-6 my-4 my-lg-0" method="GET" action="#">
+            <div class="input-group input-group-underlined">
+              <input class="form-control form-control-underlined ps-3" type="text" name="q" placeholder="Search Products" aria-describedby="button-search" aria-label="Search">
+              <button class="btn btn-underlined" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
               </button>
             </div>
-          </div>
-        </form>
+          </form>
 
-        
+          <ul class="list-inline mb-0 d-none d-lg-block">
+            <li class="list-inline-item me-3 dropdown">
+              <a class="text-dark text-primary-hover" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                    {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+              </div>
+            </li>
+            <li class="list-inline-item me-3">
+              <a class="text-dark text-primary-hover position-relative" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+              </a>
+            </li>
+            <li class="list-inline-item position-relative me-3">
+              <a class="text-dark text-primary-hover" href="#" data-bs-toggle="modal" data-bs-target="#sidebarCart">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
       </nav>
       
       <!-- End Main Nav -->
