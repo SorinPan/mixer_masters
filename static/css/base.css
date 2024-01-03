@@ -156,3 +156,27 @@ h1, h2, h3, h4 {
     width: 100%;
     height: 100%;
 }
+
+/*-------- POPULAR CHOICES --------*/
+
+.poster {
+    position: relative;
+    height: 200px;
+    transition: all .3s;
+}
+
+.poster-link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.poster:hover {
+    transform: scale(1.02);
+}
+
+.poster-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
