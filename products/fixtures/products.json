@@ -1,0 +1,257 @@
+[
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "slug": "gold_plated_shaker",
+            "sku": "SH415GOLD",
+            "name": "Luxe Gold Plated Cocktail Shaker / 415 ml (14oz)",
+            "price": "29.99",
+            "rating": 5,
+            "description": "Elevate your mixology game with our Luxe Gold Plated Cocktail Shaker, a stunning fusion of functionality and elegance. Crafted from premium stainless steel with a lustrous gold finish, this shaker not only adds a touch of opulence to your barware collection but also promises durability and efficiency. With a capacity of 415 ml, it's perfectly sized for crafting your favorite cocktails.",
+            "stock": 36,
+            "features": "Capacity: 415ml (14oz), Measurement: 20cm, Color: Gold Plated, Measured, Hand wash only",
+            "image_url": null,
+            "image": "SH415GOLD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "slug": "solid_wood_shaker",
+            "sku": "SH500WOOD",
+            "name": "Rustic Solid Wood Cocktail Shaker / 500ml (17oz)",
+            "price": "29.99",
+            "rating": 4,
+            "description": "Discover the charm of traditional mixology with our Rustic Solid Wood Cocktail Shaker. This unique shaker, boasting a generous 500 ml capacity, is expertly crafted from high-quality solid wood, offering both durability and a timeless aesthetic. The robust construction ensures a sturdy grip and effective mixing, making it ideal for crafting a wide range of cocktails. The larger size is perfect for entertaining, allowing you to mix multiple drinks at once.",
+            "stock": 28,
+            "features": "Capacity: 500ml (17oz), Measurement: 22cm, Materials: Solid Wood, Built-in strainer",
+            "image_url": null,
+            "image": "SH500WOOD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "slug": "boston_shaker_steel",
+            "sku": "SH445BOST",
+            "name": "Professional Boston Shaker in Stainless Steel / 445 ml (15oz)",
+            "price": "27.95",
+            "rating": 4,
+            "description": "Master the art of cocktail crafting with our Professional Boston Shaker. Made from high-grade stainless steel, this 445 ml shaker is the choice of bartending professionals worldwide. Renowned for its durability and resistance to corrosion and rust, this shaker ensures longevity in even the busiest bar environments.",
+            "stock": 15,
+            "features": "Capacity: 445 ml (15oz), Measurement: 27cm, Ideal for professional level bartenders, Dishwasher safe",
+            "image_url": null,
+            "image": "SH445BOST.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "category": 1,
+            "slug": "diamond_cut_shaker",
+            "sku": "SH740DIAM",
+            "name": "Diamond Cut Stainless Steel Cocktail Shaker / 740 ml (25oz)",
+            "price": "24.95",
+            "rating": 3,
+            "description": "Add a touch of sophistication to your barware collection with our Diamond Cut Stainless Steel Cocktail Shaker. This exquisitely designed shaker, with its generous 740 ml capacity, is perfect for mixing multiple cocktails at once, making it ideal for gatherings and professional bar settings. Crafted from premium stainless steel, it boasts a striking diamond cut pattern that not only enhances grip but also adds a luxurious, eye-catching aesthetic.",
+            "stock": 20,
+            "features": "Capacity: 740 ml (25oz), Measurement: 25cm, Beautiful and elegant diamond cut stainless steel, Diamond divots reflect light",
+            "image_url": null,
+            "image": "SH740DIAM.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "category": 1,
+            "slug": "spiked_ice_vinyl_shaker",
+            "sku": "SH830SPIKE",
+            "name": "Spiked Ice Vinyl Cocktail Shaker / 830 ml (28oz)",
+            "price": "31.99",
+            "rating": 4,
+            "description": "Introducing the Spiked Ice Vinyl Cocktail Shaker, a bold addition to any mixology collection. With an 830 ml capacity, this shaker is perfect for crafting large batches of cocktails. Its unique spiked ice design and durable vinyl coating offer a comfortable grip and a striking look.",
+            "stock": 25,
+            "features": "Capacity: 830 ml (28oz), Measurement: 30cm, Material: Vinyl with spiked ice design, Hand wash recommended",
+            "image_url": null,
+            "image": "SH830SPIKE.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,
+        "fields": {
+            "category": 1,
+            "slug": "vacuum_insulated_marble_shaker",
+            "sku": "SH500VACMARB",
+            "name": "Vacuum Insulated Cocktail Shaker Marble / 500 ml (17oz)",
+            "price": "33.95",
+            "rating": 5,
+            "description": "Keep your cocktails chilled to perfection with our Vacuum Insulated Cocktail Shaker in Marble design. This 500 ml shaker features a unique marble finish and vacuum insulation, ensuring your drinks stay cold while you mix and shake.",
+            "stock": 30,
+            "features": "Capacity: 500 ml (17oz), Measurement: 24cm, Finish: Marble, Vacuum insulated, Stainless steel",
+            "image_url": null,
+            "image": "SH500VACMARB.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,
+        "fields": {
+            "category": 1,
+            "slug": "tiki_shaker_tin",
+            "sku": "SH830TIKI",
+            "name": "Tiki Cocktail Shaker Tin / 830 ml (28oz)",
+            "price": "29.50",
+            "rating": 4,
+            "description": "Embrace the island spirit with our Tiki Cocktail Shaker Tin. This 830 ml shaker is adorned with a Tiki-inspired design, perfect for tropical-themed cocktails. Its large capacity makes it ideal for entertaining and crafting multiple drinks.",
+            "stock": 20,
+            "features": "Capacity: 830 ml (28oz), Measurement: 30cm, Tiki design, Stainless steel, Dishwasher safe",
+            "image_url": null,
+            "image": "SH830TIKI.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,
+        "fields": {
+            "category": 1,
+            "slug": "weighted_shaker_gun_metal",
+            "sku": "SH530WGUNMET",
+            "name": "Weighted Cocktail Shaker Gun Metal / 530 ml (18oz)",
+            "price": "27.99",
+            "rating": 5,
+            "description": "Our Weighted Cocktail Shaker in Gun Metal is a sleek, contemporary choice for the modern bartender. The 530 ml capacity and weighted design ensure a balanced, comfortable shaking experience, while the gun metal finish adds a touch of sophistication.",
+            "stock": 22,
+            "features": "Capacity: 530 ml (18oz), Measurement: 26cm, Finish: Gun Metal, Weighted design, Stainless steel",
+            "image_url": null,
+            "image": "SH530WGUNMET.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,
+        "fields": {
+            "category": 1,
+            "slug": "penguin_cocktail_shaker",
+            "sku": "SH530PENG",
+            "name": "Penguin Cocktail Shaker / 530 ml (18oz)",
+            "price": "34.99",
+            "rating": 4,
+            "description": "Add a whimsical touch to your barware with the Penguin Cocktail Shaker. This 530 ml shaker, designed to resemble a charming penguin, is not only a conversation starter but also a high-quality tool for mixing drinks.",
+            "stock": 18,
+            "features": "Capacity: 530 ml (18oz), Measurement: 26cm, Penguin design, Stainless steel, Hand wash only",
+            "image_url": null,
+            "image": "SH530PENG.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,
+        "fields": {
+            "category": 1,
+            "slug": "classic_etched_shaker",
+            "sku": "SH470CETCH",
+            "name": "Classic Etched Cocktail Shaker / 470 ml (16oz)",
+            "price": "26.95",
+            "rating": 5,
+            "description": "The Classic Etched Cocktail Shaker combines timeless design with practical functionality. Its 470 ml capacity is perfect for standard cocktail recipes, and the beautifully etched exterior provides both style and a non-slip grip.",
+            "stock": 25,
+            "features": "Capacity: 470 ml (16oz), Measurement: 23cm, Etched design, Stainless steel, Dishwasher safe",
+            "image_url": null,
+            "image": "SH470CETCH.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 11,
+        "fields": {
+            "category": 2,
+            "slug": "classic_designs_strainer",
+            "sku": "STRCLASS",
+            "name": "Classic Cocktail Strainer - Hand Crafted",
+            "price": "34.95",
+            "rating": 5,
+            "description": "Experience the perfect blend of tradition and quality with our Hand Crafted Classic Cocktail Strainer. Made from premium-grade stainless steel, this strainer promises both durability and a timeless elegance. Its ergonomic design fits comfortably in your hand, making it easy to strain cocktails with precision and flair",
+            "stock": 12,
+            "features": "Fully hand crafted, High quality Stainless Steel, Ideal for home and professional bartenders, New spring embedding system ensures a tight fit to the edges of the mixing tin",
+            "image_url": null,
+            "image": "STRCLASS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 12,
+        "fields": {
+            "category": 2,
+            "slug": "contacto_hawthorne_strainer",
+            "sku": "STRHAWCON",
+            "name": "Strainer Contacto Hawthorne - Pinwheel Design",
+            "price": "22.95",
+            "rating": 4,
+            "description": "The Contacto Hawthorne Strainer stands out with its unique pinwheel design. Crafted for efficiency and style, it's an essential tool for any mixologist. The tight spring and durable construction ensure a perfect strain every time.",
+            "stock": 20,
+            "features": "Pinwheel design, Durable stainless steel, Tight spring for effective straining, Suitable for professional use",
+            "image_url": null,
+            "image": "STRHAWCON.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 13,
+        "fields": {
+            "category": 2,
+            "slug": "fine_stainless_steel_strainer",
+            "sku": "STRFINESS",
+            "name": "Fine Strainer - Stainless Steel",
+            "price": "19.99",
+            "rating": 5,
+            "description": "Our Fine Strainer in Stainless Steel is a must-have for crafting clear, refined cocktails. Its fine mesh filters out even the smallest particles, ensuring a smooth and elegant drink presentation.",
+            "stock": 15,
+            "features": "Fine mesh, High-grade stainless steel, Ideal for removing small particles, Ergonomic handle",
+            "image_url": null,
+            "image": "STRFINESS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 14,
+        "fields": {
+            "category": 2,
+            "slug": "modern_hawthorne_strainer",
+            "sku": "STRHAWMOD",
+            "name": "Hawthorne Strainer - Modern",
+            "price": "24.50",
+            "rating": 4,
+            "description": "The Modern Hawthorne Strainer combines classic functionality with contemporary design. Its sleek form and efficient straining capability make it a favorite among modern mixologists.",
+            "stock": 18,
+            "features": "Contemporary design, Durable build, Efficient straining mechanism, Comfortable grip",
+            "image_url": null,
+            "image": "STRHAWMOD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 15,
+        "fields": {
+            "category": 2,
+            "slug": "julep_cocktail_strainer",
+            "sku": "STRJULEP",
+            "name": "Cocktail Strainer - Julep",
+            "price": "21.95",
+            "rating": 4,
+            "description": "Our Julep Cocktail Strainer is a classic choice for any bartender. With its timeless Julep design, this strainer is not only visually appealing but also highly functional for straining a variety of cocktails.",
+            "stock": 22,
+            "features": "Classic Julep design, High-quality material, Versatile for various cocktails, Easy to clean",
+            "image_url": null,
+            "image": "STRJULEP.webp"
+        }
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "shakers",
+            "friendly_name": "Shakers"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "mixing_tools",
+            "friendly_name": "Mixing Tools"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "bar_tools",
+            "friendly_name": "Bar Tools"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "bitters_mixers",
+            "friendly_name": "Bitters & Mixers"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name": "garnishes",
+            "friendly_name": "Garnishes"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+            "name": "syrups_sweeteners",
+            "friendly_name": "Syrups & Sweeteners"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 7,
+        "fields": {
+            "name": "cocktail_glasses",
+            "friendly_name": "Cocktail Glasses"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 8,
+        "fields": {
+            "name": "wine_glasses",
+            "friendly_name": "Wine Glasses"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 9,
+        "fields": {
+            "name": "shot_glasses",
+            "friendly_name": "Shot Glasses"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 10,
+        "fields": {
+            "name": "mixology",
+            "friendly_name": "Mixology"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 11,
+        "fields": {
+            "name": "bartending",
+            "friendly_name": "Bartending"
+        }
+    }
+    ]
