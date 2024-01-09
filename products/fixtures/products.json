@@ -253,5 +253,1110 @@
             "image_url": null,
             "image": "STRJULEP.webp"
         }
+    },
+    {
+        "model": "products.product",
+        "pk": 16,
+        "fields": {
+            "category": 2,
+            "slug": "bali_teak_spoons",
+            "sku": "SPO6BALI",
+            "name": "Bali Teak Spoons - 6 pack",
+            "price": "34.95",
+            "rating": 3,
+            "description": "Add a touch of natural elegance to your barware with our Bali Teak Stirring Spoons. This exquisite set of six is handcrafted from the finest teak wood, known for its durability and rich, warm hues. Each spoon measures 25cm, making them ideal for mixing drinks in deep cocktail shakers or glasses. Their ergonomic design ensures comfortable handling, and the smooth, polished surface won't scratch your glassware.",
+            "stock": 36,
+            "features": "Material: Teak wood, Durable and lightweight, Hand wash recommended",
+            "image_url": null,
+            "image": "SPO6BALI.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 17,
+        "fields": {
+            "category": 2,
+            "slug": "long_stirring_spoons_gold",
+            "sku": "SP4LOGOLD",
+            "name": "Long Stirring Spoons / Gold - 4 pack",
+            "price": "29.95",
+            "rating": 4,
+            "description": "Elevate your cocktail crafting with our Long Stirring Spoons in Gold. This set of four spoons, each 35cm in length, is perfect for reaching into tall glasses and shakers. Their luxurious gold finish adds an opulent touch to your bar setup.",
+            "stock": 24,
+            "features": "Material: Stainless steel with gold finish, Length: 35cm, Set of 4, Hand wash recommended",
+            "image_url": null,
+            "image": "SP4LOGOLD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 18,
+        "fields": {
+            "category": 2,
+            "slug": "stirring_spoons_blackwood",
+            "sku": "SP4BLKWD",
+            "name": "Stirring Spoons / Blackwood - 4 pack",
+            "price": "26.95",
+            "rating": 3,
+            "description": "Our Blackwood Stirring Spoons, coming in a set of four, blend functionality with elegance. Crafted from high-quality blackwood, these 25cm spoons are perfect for mixing and stirring a variety of cocktails, adding a sleek look to your barware.",
+            "stock": 30,
+            "features": "Material: Blackwood, Length: 25cm, Set of 4, Durable and stylish",
+            "image_url": null,
+            "image": "SP4BLKWD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 19,
+        "fields": {
+            "category": 2,
+            "slug": "bar_spoon_modern",
+            "sku": "SPMODERN",
+            "name": "Bar Spoon / Modern - Single piece",
+            "price": "15.95",
+            "rating": 5,
+            "description": "The Modern Bar Spoon is a single, sleek piece that's a must-have for any mixologist. Its 30cm length and balanced weight make it ideal for stirring and layering drinks, offering both style and precision in one tool.",
+            "stock": 40,
+            "features": "Material: Stainless steel, Length: 30cm, Single piece, Balanced for precision",
+            "image_url": null,
+            "image": "SPMODERN.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 20,
+        "fields": {
+            "category": 2,
+            "slug": "floral_etched_spoon_copper",
+            "sku": "SPT1FLCOP",
+            "name": "Floral Etched Stirring Spoon / Copper - Single piece",
+            "price": "19.99",
+            "rating": 4,
+            "description": "Our Floral Etched Stirring Spoon in Copper is a beautifully crafted single piece that adds artistic flair to your mixology. The detailed floral etching on the handle paired with the stunning copper finish makes this 25cm spoon a work of art and a practical tool.",
+            "stock": 22,
+            "features": "Material: Copper, Length: 25cm, Floral etched design, Elegant and functional",
+            "image_url": null,
+            "image": "SPT1FLCOP.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 21,
+        "fields": {
+            "category": 2,
+            "slug": "wood_muddler",
+            "sku": "MUD30WOOD",
+            "name": "Classic Wood Muddler - 30cm",
+            "price": "24.99",
+            "rating": 4,
+            "description": "Unleash the full potential of your ingredients with our Classic Wood Muddler, measuring 30 cm in length. Expertly crafted from high-quality, natural wood, this muddler is essential for efficiently crushing and blending herbs, fruits, and spices in your cocktails. The robust and durable design ensures it can withstand the rigors of regular use, making it perfect for both professional bartenders and home enthusiasts. ",
+            "stock": 5,
+            "features": "Durable wood material, Length: 30cm, Perfect for the professional level bartender",
+            "image_url": null,
+            "image": "MUD30WOOD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 22,
+        "fields": {
+            "category": 2,
+            "slug": "acrylic_muddler_led",
+            "sku": "MUD30LED",
+            "name": "Acrylic Muddler with LED Lights - 30cm",
+            "price": "28.99",
+            "rating": 5,
+            "description": "Add a splash of light to your mixology with our Acrylic Muddler featuring LED lights. This 30cm muddler illuminates your cocktail crafting process, making it not only a tool but a showpiece. Ideal for themed parties and professional bars seeking a modern twist.",
+            "stock": 10,
+            "features": "Material: Acrylic with LED lights, Length: 30cm, Battery operated, Easy to clean",
+            "image_url": null,
+            "image": "MUD30LED.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 23,
+        "fields": {
+            "category": 2,
+            "slug": "modern_muddler_cherry_wood",
+            "sku": "MUD25CHWD",
+            "name": "Modern Muddler in Cherry Wood - 25cm",
+            "price": "22.95",
+            "rating": 4,
+            "description": "Our Modern Muddler, crafted from fine Cherry Wood, is 25cm of elegance and functionality. Perfect for the sophisticated bartender, it's designed to muddle ingredients gently yet effectively, preserving their flavors.",
+            "stock": 15,
+            "features": "Material: Cherry wood, Length: 25cm, Ergonomic design, Suitable for delicate muddling",
+            "image_url": null,
+            "image": "MUD25CHWD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 24,
+        "fields": {
+            "category": 2,
+            "slug": "tiki_ti_muddler_wood",
+            "sku": "MUD25TIKI",
+            "name": "Tiki Ti Muddler in Wood - 25cm",
+            "price": "21.99",
+            "rating": 3,
+            "description": "Embrace tropical mixology with our 25cm Tiki Ti Wood Muddler. Its unique Tiki-inspired design brings a fun and exotic flair to your cocktail preparation, while the sturdy wood construction ensures effective muddling.",
+            "stock": 20,
+            "features": "Material: Wood with Tiki design, Length: 25cm, Durable, Adds tropical theme to barware",
+            "image_url": null,
+            "image": "MUD25TIKI.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 25,
+        "fields": {
+            "category": 2,
+            "slug": "classic_muddler_bamboo",
+            "sku": "MUD25BAMB",
+            "name": "Classic Muddler in Bamboo - 25cm",
+            "price": "18.95",
+            "rating": 4,
+            "description": "Our Classic Bamboo Muddler, 25cm in length, combines traditional style with sustainable materials. Its robust bamboo construction is perfect for muddling herbs and fruits, making it an eco-friendly addition to any bar.",
+            "stock": 25,
+            "features": "Material: Bamboo, Length: 25cm, Eco-friendly, Ideal for everyday use",
+            "image_url": null,
+            "image": "MUD25BAMB.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 26,
+        "fields": {
+            "category": 2,
+            "slug": "double_jigger_wood",
+            "sku": "JIG1545WD",
+            "name": "Double Jigger / Wood - 15ml by 45ml",
+            "price": "19.99",
+            "rating": 4,
+            "description": "Our Double Jigger in Wood offers a unique twist on a classic bartending tool. It features two different measuring cups (15ml and 45ml), carved from high-quality wood, perfect for accurately measuring spirits and mixers.",
+            "stock": 20,
+            "features": "Material: High-quality wood, Measurements: 15ml and 45ml, Durable and stylish, Hand wash only",
+            "image_url": null,
+            "image": "JIG1545WD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 27,
+        "fields": {
+            "category": 2,
+            "slug": "classic_jigger_stainless_steel",
+            "sku": "JIG60SS",
+            "name": "Classic Jigger / Stainless Steel - 60ml",
+            "price": "15.95",
+            "rating": 5,
+            "description": "The Classic Jigger in Stainless Steel is an essential tool for any mixologist. With a 60ml capacity, it's perfect for precisely measuring out spirits, ensuring consistency in every cocktail.",
+            "stock": 30,
+            "features": "Material: Stainless steel, Measurement: 60ml, Durable and easy to clean, Dishwasher safe",
+            "image_url": null,
+            "image": "JIG60SS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 28,
+        "fields": {
+            "category": 2,
+            "slug": "bamboo_jigger",
+            "sku": "JIG3045BA",
+            "name": "Bamboo Jigger - 30ml by 45ml",
+            "price": "17.99",
+            "rating": 4,
+            "description": "Our Bamboo Jigger is a unique, eco-friendly option for the modern bartender. Featuring two measures (30ml and 45ml), it's made from sustainable bamboo, offering both precision and style in your drink preparation.",
+            "stock": 25,
+            "features": "Material: Sustainable bamboo, Measurements: 30ml and 45ml, Eco-friendly and durable, Hand wash recommended",
+            "image_url": null,
+            "image": "JIG3045BA.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 29,
+        "fields": {
+            "category": 2,
+            "slug": "cocktail_jigger_stainless_steel",
+            "sku": "JIG3060SS",
+            "name": "Cocktail Jigger / Stainless Steel - 30ml by 60ml",
+            "price": "18.95",
+            "rating": 5,
+            "description": "This Stainless Steel Cocktail Jigger is a versatile addition to any bar, featuring two essential measures, 30ml and 60ml. Its sleek design and durable material make it a reliable tool for crafting perfect cocktails.",
+            "stock": 18,
+            "features": "Material: Stainless steel, Measurements: 30ml and 60ml, Sleek design, Dishwasher safe",
+            "image_url": null,
+            "image": "JIG3060SS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 30,
+        "fields": {
+            "category": 3,
+            "slug": "easy_citrus_wedger",
+            "sku": "WEDG8SS",
+            "name": "Easy Citrus Wedger in Stainless Steel - 8 Sections",
+            "price": "249.99",
+            "rating": null,
+            "description": "Simplify your cocktail preparation with our Easy Citrus Wedger, crafted from premium stainless steel. Designed for efficiency and ease of use, this tool quickly and cleanly cuts citrus fruits into eight uniform sections, perfect for garnishes or adding a splash of citrus to your drinks. The sharp, durable blades ensure a clean cut every time, while the ergonomic handles provide comfort and stability during use.",
+            "stock": 18,
+            "features": "Easy to use, high quality citrus / fruit slicer, Dishwasher safe",
+            "image_url": null,
+            "image": "WEDG8SS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 31,
+        "fields": {
+            "category": 3,
+            "slug": "professional_juicer_black",
+            "sku": "JUICPROBLK",
+            "name": "Professional Juicer / Black - Aluminum Base",
+            "price": "119.99",
+            "rating": null,
+            "description": "Our Professional Juicer with a black aluminum base combines style and functionality. It's designed to extract maximum juice with minimal effort, making it perfect for busy bartenders and cocktail enthusiasts.",
+            "stock": 10,
+            "features": "Material: Aluminum, Color: Black, Efficient juice extraction, Easy to clean",
+            "image_url": null,
+            "image": "JUICPROBLK.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 32,
+        "fields": {
+            "category": 3,
+            "slug": "multi_functional_tool",
+            "sku": "TOOL9IN1",
+            "name": "Multi Functional Tool - 9 in 1",
+            "price": "49.99",
+            "rating": 4,
+            "description": "This 9 in 1 Multi Functional Tool is a must-have for any mixologist. Its versatile design includes everything from a bottle opener to a zester, making it the perfect all-in-one solution for your barware needs.",
+            "stock": 15,
+            "features": "9 tools in 1, Stainless steel construction, Compact and versatile",
+            "image_url": null,
+            "image": "TOOL9IN1.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 33,
+        "fields": {
+            "category": 3,
+            "slug": "citrus_squeezer_long_grip",
+            "sku": "SQZLONGGRP",
+            "name": "Citrus Squeezer - Long Grip",
+            "price": "29.95",
+            "rating": 4,
+            "description": "The Citrus Squeezer with a long grip is ergonomically designed for comfort and efficiency. Its extended handles provide extra leverage, making squeezing citrus fruits a breeze.",
+            "stock": 20,
+            "features": "Ergonomic long grip, Durable construction, Ideal for all citrus types",
+            "image_url": null,
+            "image": "SQZLONGGRP.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 34,
+        "fields": {
+            "category": 3,
+            "slug": "chef_knife_black",
+            "sku": "KNIF15BLK",
+            "name": "Chef Knife / Black - 15cm",
+            "price": "54.95",
+            "rating": 5,
+            "description": "Our 15cm Chef Knife in Black is a versatile kitchen essential. Perfect for precise cutting and chopping, it features a sharp, durable blade and a comfortable handle, making it a favorite among culinary professionals and home cooks alike.",
+            "stock": 12,
+            "features": "Sharp and durable blade, Length: 15cm, Comfortable handle, Sleek black design",
+            "image_url": null,
+            "image": "KNIF15BLK.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 35,
+        "fields": {
+            "category": 3,
+            "slug": "tool_roll_travel_size",
+            "sku": "TROLL8PCS",
+            "name": "Tool Roll / Travel Size - 8 piece",
+            "price": "69.99",
+            "rating": null,
+            "description": "The Tool Roll in Travel Size is perfect for mixologists on the go. This compact set includes 8 essential bar tools, neatly organized in a portable roll-up case. It's ideal for traveling professionals or for those who love to craft cocktails anywhere.",
+            "stock": 8,
+            "features": "8 piece bar tool set, Portable roll-up case, Travel-friendly, Durable materials",
+            "image_url": null,
+            "image": "TROLL8PCS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 36,
+        "fields": {
+            "category": 3,
+            "slug": "grater_black",
+            "sku": "GRAT33BLK",
+            "name": "Grater / Black - 33cm",
+            "price": "29.99",
+            "rating": 4,
+            "description": "Our 33cm Black Grater is a versatile and essential tool for any bar or kitchen. Its sharp and durable grating surface is perfect for quickly zesting citrus fruits or finely grating spices, adding a burst of flavor to your cocktails and dishes.",
+            "stock": 20,
+            "features": "Length: 33cm, Color: Black, Sharp and durable, Easy to clean",
+            "image_url": null,
+            "image": "GRAT33BLK.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 37,
+        "fields": {
+            "category": 3,
+            "slug": "cap_holder_box_walnut",
+            "sku": "CAPBOX20WAL",
+            "name": "Cap Holder Box / Walnut - 20cm x 20cm",
+            "price": "39.99",
+            "rating": 5,
+            "description": "This elegant Cap Holder Box, crafted from premium walnut, measures 20cm x 20cm. It's not only a stylish way to display and store bottle caps, but also adds a touch of sophistication to any bar setting.",
+            "stock": 15,
+            "features": "Size: 20cm x 20cm, Material: Walnut, Elegant design, Perfect for collectors",
+            "image_url": null,
+            "image": "CAPBOX20WAL.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 38,
+        "fields": {
+            "category": 3,
+            "slug": "corkscrew_gold",
+            "sku": "CORKGLD",
+            "name": "Corkscrew / Gold - Double Lever",
+            "price": "34.95",
+            "rating": 5,
+            "description": "Our Gold Double Lever Corkscrew combines functionality with elegance. Its sturdy design and double lever mechanism make opening wine bottles effortless, while its luxurious gold finish adds a touch of class.",
+            "stock": 18,
+            "features": "Color: Gold, Double lever mechanism, Sturdy and elegant, Easy to use",
+            "image_url": null,
+            "image": "CORKGLD.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 39,
+        "fields": {
+            "category": 3,
+            "slug": "wine_chiller_stainless_steel",
+            "sku": "CHILL30SS",
+            "name": "Wine Chiller / Stainless Steel - 30cm",
+            "price": "49.99",
+            "rating": 4,
+            "description": "Keep your wine perfectly chilled with our 30cm Stainless Steel Wine Chiller. Its sleek design and efficient insulation ensure your wine stays at the ideal temperature, making it an essential accessory for any wine enthusiast.",
+            "stock": 12,
+            "features": "Length: 30 cm, Material: Stainless steel, Efficient insulation, Sleek design",
+            "image_url": null,
+            "image": "CHILL30SS.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 40,
+        "fields": {
+            "category": 3,
+            "slug": "wine_stopper_set",
+            "sku": "STOP4SET",
+            "name": "Wine Stopper - 4 piece",
+            "price": "22.99",
+            "rating": 3,
+            "description": "Our 4-piece Wine Stopper set is a practical and stylish way to preserve the freshness of your wine. Each stopper is designed to provide an airtight seal, ensuring your wine stays fresh and flavorful after opening.",
+            "stock": 20,
+            "features": "Set of 4, Provides airtight seal, Preserves wine freshness, Easy to use and clean",
+            "image_url": null,
+            "image": "STOP4SET.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 41,
+        "fields": {
+            "category": 4,
+            "slug": "cocktail_bitters_set",
+            "sku": "BITSET12",
+            "name": "Cocktail Bitters Set - 12 pieces",
+            "price": "59.99",
+            "rating": 5,
+            "description": "Explore a world of flavor with our 12-piece Cocktail Bitters Set. Each bottle in this comprehensive collection offers a unique blend of botanicals, perfect for experimenting with new cocktail recipes or enhancing classic drinks.",
+            "stock": 10,
+            "features": "Set of 12, Variety of flavors, Each bottle: 60 ml, Ideal for cocktail enthusiasts",
+            "image_url": null,
+            "image": "BITSET12.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 42,
+        "fields": {
+            "category": 4,
+            "slug": "cocktail_bitter_60ml",
+            "sku": "BIT60ML",
+            "name": "Cocktail Bitter - 60ml",
+            "price": "14.95",
+            "rating": null,
+            "description": "Elevate your mixology game with our 60 ml Cocktail Bitter. This classic bitter is a staple for any bar, adding depth and complexity to your cocktails with its balanced blend of herbs and spices.",
+            "stock": 15,
+            "features": "Volume: 60 ml, Classic bitter blend, Adds depth to cocktails",
+            "image_url": null,
+            "image": "BIT60ML.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 43,
+        "fields": {
+            "category": 4,
+            "slug": "scorpion_bitter_60ml",
+            "sku": "BITSCORP60",
+            "name": "Scorpion Bitter - 60ml",
+            "price": "16.99",
+            "rating": null,
+            "description": "Add a daring twist to your cocktails with our Scorpion Bitter. Infused with unique flavors, this 60 ml bitter is perfect for creating bold, adventurous drinks that leave a lasting impression.",
+            "stock": 20,
+            "features": "Volume: 60 ml, Unique flavor profile, Ideal for adventurous cocktails",
+            "image_url": null,
+            "image": "BITSCORP60.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 44,
+        "fields": {
+            "category": 4,
+            "slug": "barrel_aged_bitter_150ml",
+            "sku": "BITBAR150",
+            "name": "Barrel-Aged Bitter - 150ml",
+            "price": "24.99",
+            "rating": 5,
+            "description": "Our Barrel-Aged Bitter, in a 150 ml bottle, brings a rich, mature flavor to your cocktails. Aged in wooden barrels, it imparts a distinctive woody note, perfect for enhancing whiskey and rum-based drinks.",
+            "stock": 12,
+            "features": "Volume: 150 ml, Aged in wooden barrels, Rich and mature flavor",
+            "image_url": null,
+            "image": "BITBAR150.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 45,
+        "fields": {
+            "category": 4,
+            "slug": "margarita_mixers_set",
+            "sku": "MIXMARG5",
+            "name": "Margarita Mixers - 5 pieces",
+            "price": "49.99",
+            "rating": null,
+            "description": "Our 5-piece Margarita Mixers set is perfect for crafting delicious margaritas with ease. Each mixer in this set is carefully crafted to provide a balanced blend of flavors, ensuring a perfect margarita every time.",
+            "stock": 15,
+            "features": "Set of 5, Easy to use, Perfectly balanced flavors, Each bottle: 375 ml",
+            "image_url": null,
+            "image": "MIXMARG5.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 46,
+        "fields": {
+            "category": 4,
+            "slug": "skinny_margarita_mixer",
+            "sku": "MIXSKINMARG",
+            "name": "Skinny Margarita Mixer - 1l",
+            "price": "19.99",
+            "rating": 4,
+            "description": "Enjoy guilt-free cocktails with our Skinny Margarita Mixer, available in a 1-liter bottle. This mixer offers all the flavor of a classic margarita without the extra calories, perfect for health-conscious cocktail lovers.",
+            "stock": 20,
+            "features": "Volume: 1 liter, Low calorie, Full flavor, Ideal for health-conscious drinkers",
+            "image_url": null,
+            "image": "MIXSKINMARG.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 47,
+        "fields": {
+            "category": 4,
+            "slug": "skinny_pina_colada_mixer",
+            "sku": "MIXSKINPINA",
+            "name": "Skinny Pina Colada Mixer - 1l",
+            "price": "19.99",
+            "rating": 4,
+            "description": "Create light and refreshing cocktails with our Skinny Pina Colada Mixer in a 1-liter bottle. This mixer captures the essence of a traditional pina colada while being low in calories, making it a fantastic choice for health-conscious enthusiasts.",
+            "stock": 18,
+            "features": "Volume: 1 liter, Low calorie, Tropical flavor, Health-friendly",
+            "image_url": null,
+            "image": "MIXSKINPINA.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 48,
+        "fields": {
+            "category": 4,
+            "slug": "pickle_brine",
+            "sku": "BRINEPICK375",
+            "name": "Pickle Brine - 375ml",
+            "price": "14.99",
+            "rating": null,
+            "description": "Add a unique twist to your cocktails with our 375 ml Pickle Brine. It's perfect for adventurous mixologists looking to experiment with new flavors or to add an extra zing to classic recipes.",
+            "stock": 22,
+            "features": "Volume: 375 ml, Unique flavor enhancer, Versatile in use",
+            "image_url": null,
+            "image": "BRINEPICK375.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 49,
+        "fields": {
+            "category": 5,
+            "slug": "dehydrated_orange_wheels",
+            "sku": "GARORNG25",
+            "name": "Dehydrated Orange Wheels - 25+ slices",
+            "price": "12.99",
+            "rating": 4,
+            "description": "Elevate your cocktails with our Dehydrated Orange Wheels, offering over 25 slices per pack. These naturally dried orange slices are perfect for garnishing and adding a citrusy aroma to your drinks.",
+            "stock": 30,
+            "features": "25+ slices per pack, Naturally dehydrated, Aromatic citrus garnish",
+            "image_url": null,
+            "image": "GARORNG25.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 50,
+        "fields": {
+            "category": 5,
+            "slug": "dehydrated_lime_wheels",
+            "sku": "GARLIME50",
+            "name": "Dehydrated Lime Wheels - 50+ slices",
+            "price": "14.99",
+            "rating": 5,
+            "description": "Our Dehydrated Lime Wheels bring a refreshing twist to your cocktails. With over 50 slices in each pack, these crisp lime wheels are ideal for adding a tangy flavor and decorative flair.",
+            "stock": 25,
+            "features": "50+ slices per pack, Crisp and tangy, Enhances flavor and presentation",
+            "image_url": null,
+            "image": "GARLIME50.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 51,
+        "fields": {
+            "category": 5,
+            "slug": "chili_lime_salt",
+            "sku": "GARCLISALT115",
+            "name": "Chili Lime Salt - 115g",
+            "price": "9.99",
+            "rating": 4,
+            "description": "Add a spicy kick to your cocktails with our Chili Lime Salt. This 115g pack combines the zest of lime with a hint of chili, perfect for rimming glasses and enhancing the flavor of your drinks.",
+            "stock": 40,
+            "features": "115g pack, Zesty lime and spicy chili blend, Ideal for rimming",
+            "image_url": null,
+            "image": "GARCLISALT115.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 52,
+        "fields": {
+            "category": 5,
+            "slug": "rimming_salt",
+            "sku": "GARRIMSALT115",
+            "name": "Rimming Salt - 115g",
+            "price": "8.99",
+            "rating": 5,
+            "description": "Our Rimming Salt, in a 115g package, is a bar essential for crafting perfect margaritas and other salt-rimmed cocktails. It adheres beautifully to glass rims, offering a classic, crisp finish.",
+            "stock": 35,
+            "features": "115g pack, Fine grain, Ideal for classic salt-rimmed cocktails",
+            "image_url": null,
+            "image": "GARRIMSALT115.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 53,
+        "fields": {
+            "category": 5,
+            "slug": "infusion_kit",
+            "sku": "GARINF450",
+            "name": "Infusion Kit - 450g",
+            "price": "29.99",
+            "rating": null,
+            "description": "Transform your cocktails with our 450g Infusion Kit. This kit includes a variety of spices, herbs, and botanicals, allowing you to experiment and create unique, infused spirits and cocktails at home.",
+            "stock": 15,
+            "features": "450g kit, Variety of spices and botanicals, Perfect for spirit infusions",
+            "image_url": null,
+            "image": "GARINF450.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 54,
+        "fields": {
+            "category": 5,
+            "slug": "strawberry_sugar",
+            "sku": "GARSTRAW115",
+            "name": "Strawberry Sugar - 115g",
+            "price": "10.99",
+            "rating": 4,
+            "description": "Our Strawberry Sugar, in a 115g pack, is a delightful addition to any cocktail. Its sweet strawberry flavor is perfect for rimming glasses or adding a touch of sweetness to your favorite drinks.",
+            "stock": 20,
+            "features": "115g pack, Sweet strawberry flavor, Versatile in use",
+            "image_url": null,
+            "image": "GARSTRAW115.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 55,
+        "fields": {
+            "category": 6,
+            "slug": "tea_syrup",
+            "sku": "SYRTEA280",
+            "name": "Tea Syrup - 280ml",
+            "price": "16.99",
+            "rating": 4,
+            "description": "Our Tea Syrup, in a 280ml bottle, offers a unique way to add the rich, comforting flavor of brewed tea to your cocktails. Perfect for creating layered and complex drinks.",
+            "stock": 20,
+            "features": "Volume: 280 ml, Rich tea flavor, Ideal for creative cocktails",
+            "image_url": null,
+            "image": "SYRTEA280.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 56,
+        "fields": {
+            "category": 6,
+            "slug": "almond_syrup",
+            "sku": "SYRALM280",
+            "name": "Almond Syrup - 280ml",
+            "price": "14.95",
+            "rating": 5,
+            "description": "Elevate your cocktail game with our Almond Syrup. This 280ml bottle is filled with the sweet, nutty essence of almonds, perfect for adding a hint of richness to both alcoholic and non-alcoholic beverages.",
+            "stock": 25,
+            "features": "Volume: 280 ml, Sweet almond essence, Versatile for various drinks",
+            "image_url": null,
+            "image": "SYRALM280.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 57,
+        "fields": {
+            "category": 6,
+            "slug": "passion_fruit_syrup",
+            "sku": "SYRPASS1L",
+            "name": "Passion Fruit Syrup - 1l",
+            "price": "19.99",
+            "rating": 5,
+            "description": "Our Passion Fruit Syrup, in a generous 1-liter bottle, brings the exotic taste of passion fruit to your cocktails and mocktails. It's perfect for adding a tropical twist to your favorite drinks.",
+            "stock": 15,
+            "features": "Volume: 1 liter, Exotic passion fruit flavor, Ideal for tropical cocktails",
+            "image_url": null,
+            "image": "SYRPASS1L.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 58,
+        "fields": {
+            "category": 6,
+            "slug": "cordial_syrup",
+            "sku": "SYRCORD1L",
+            "name": "Cordial Syrup - 1l",
+            "price": "18.95",
+            "rating": 4,
+            "description": "Add a classic sweetness to your beverages with our Cordial Syrup. Available in a 1-liter bottle, this syrup is a staple for any bar, providing a simple yet delightful sweetener for a variety of cocktails.",
+            "stock": 18,
+            "features": "Volume: 1 liter, Classic sweetener, Perfect for mixing",
+            "image_url": null,
+            "image": "SYRCORD1L.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 59,
+        "fields": {
+            "category": 6,
+            "slug": "elderflower_water",
+            "sku": "WATERELD150",
+            "name": "Elderflower Water - 150ml",
+            "price": "12.99",
+            "rating": null,
+            "description": "Our Elderflower Water, in a 150ml bottle, is a delicate and fragrant addition to your bar. Infused with the essence of elderflower, it's perfect for adding a floral note to cocktails, enhancing their aroma and flavor.",
+            "stock": 30,
+            "features": "Volume: 150 ml, Delicate elderflower essence, Floral and aromatic",
+            "image_url": null,
+            "image": "WATERELD150.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 60,
+        "fields": {
+            "category": 7,
+            "slug": "halm_cocktail_glass",
+            "sku": "GLSHALM300",
+            "name": "Halm Cocktail Glass - 300ml",
+            "price": "9.99",
+            "rating": null,
+            "description": "The Halm Cocktail Glass, holding 300ml, is a modern twist on classic design. Perfect for a variety of cocktails, its elegant shape and sturdy base make it a favorite for any occasion.",
+            "stock": 40,
+            "features": "Volume: 300 ml, Modern design, Versatile for various cocktails",
+            "image_url": null,
+            "image": "GLSHALM300.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 61,
+        "fields": {
+            "category": 7,
+            "slug": "snail_cocktail_glass",
+            "sku": "GLSSNAIL470",
+            "name": "Snail Cocktail Glass - 470ml",
+            "price": "11.95",
+            "rating": 5,
+            "description": "Our Snail Cocktail Glass, with a 470ml capacity, features a unique, spiral design. It's perfect for serving layered or visually complex drinks, adding an artistic touch to your cocktail presentation.",
+            "stock": 30,
+            "features": "Volume: 470 ml, Unique spiral design, Ideal for creative presentations",
+            "image_url": null,
+            "image": "GLSSNAIL470.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 62,
+        "fields": {
+            "category": 7,
+            "slug": "poly_cocktail_glass",
+            "sku": "GLSPOLY300",
+            "name": "Poly Cocktail Glass - 300ml",
+            "price": "10.99",
+            "rating": 4,
+            "description": "The Poly Cocktail Glass, 300ml in volume, combines geometric elegance with functionality. Its faceted design refracts light beautifully, making it a striking choice for serving classic and contemporary cocktails.",
+            "stock": 25,
+            "features": "Volume: 300 ml, Geometric design, Light-refracting facets",
+            "image_url": null,
+            "image": "GLSPOLY300.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 63,
+        "fields": {
+            "category": 7,
+            "slug": "martini_cocktail_glass",
+            "sku": "GLSMART175",
+            "name": "Martini Cocktail Glass - 175ml",
+            "price": "8.99",
+            "rating": 5,
+            "description": "Elevate your martini experience with our 175ml Martini Cocktail Glass. Its classic and sophisticated design is perfect for serving martinis and other stemmed cocktails, providing elegance to any bar setting.",
+            "stock": 35,
+            "features": "Volume: 175 ml, Classic martini shape, Elegant for stemmed cocktails",
+            "image_url": null,
+            "image": "GLSMART175.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 64,
+        "fields": {
+            "category": 7,
+            "slug": "mushroom_cocktail_glass",
+            "sku": "GLSMUSH265",
+            "name": "Mushroom Cocktail Glass - 265ml",
+            "price": "12.99",
+            "rating": null,
+            "description": "The Mushroom Cocktail Glass holds 265ml and boasts a unique, bulbous design. This glass is not only a conversation starter but also enhances the drinking experience by concentrating aromas.",
+            "stock": 20,
+            "features": "Volume: 265 ml, Bulbous design, Aroma-enhancing shape",
+            "image_url": null,
+            "image": "GLSMUSH265.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 65,
+        "fields": {
+            "category": 7,
+            "slug": "rimmed_coupe_cocktail_glass",
+            "sku": "GLSRIMCOUP200",
+            "name": "Rimmed Coupe Cocktail Glass - 200ml",
+            "price": "10.95",
+            "rating": 4,
+            "description": "Our Rimmed Coupe Cocktail Glass, with a 200ml capacity, offers a vintage charm. Ideal for serving classic cocktails, its rimmed edge and broad bowl make it both functional and stylish.",
+            "stock": 25,
+            "features": "Volume: 200 ml, Vintage style, Rimmed edge for style and functionality",
+            "image_url": null,
+            "image": "GLSRIMCOUP200.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 66,
+        "fields": {
+            "category": 8,
+            "slug": "stemless_wine_glass",
+            "sku": "WINESTM412",
+            "name": "Stemless Wine Glass / Wine Me Up - 412ml",
+            "price": "12.99",
+            "rating": 4,
+            "description": "Our 'Wine Me Up' Stemless Wine Glass, with a 412ml capacity, combines contemporary design with casual elegance. Perfect for a relaxed wine experience, its stemless design makes it less prone to tipping and easier to clean.",
+            "stock": 30,
+            "features": "Volume: 412 ml, Contemporary stemless design, Durable and easy to handle",
+            "image_url": null,
+            "image": "WINESTM412.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 67,
+        "fields": {
+            "category": 8,
+            "slug": "wine_flight_walnut",
+            "sku": "WINEFLT4WAL",
+            "name": "Wine Flight / Walnut - 4 pieces",
+            "price": "49.99",
+            "rating": 5,
+            "description": "Explore and display a variety of wines with our Walnut Wine Flight set. This elegant set includes four glasses and a walnut base, perfect for tastings and showcasing your favorite vintages.",
+            "stock": 20,
+            "features": "Set of 4 glasses, Walnut base, Ideal for wine tastings and display",
+            "image_url": null,
+            "image": "WINEFLT4WAL.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 68,
+        "fields": {
+            "category": 8,
+            "slug": "classic_wine_glass",
+            "sku": "WINECLS250",
+            "name": "Classic Wine Glass - 250ml",
+            "price": "7.99",
+            "rating": 4,
+            "description": "Our Classic Wine Glass, holding 250ml, is a timeless addition to any table setting. Its elegant design and perfect size make it suitable for a wide range of wines, enhancing both aroma and taste.",
+            "stock": 40,
+            "features": "Volume: 250 ml, Timeless design, Suitable for various wine types",
+            "image_url": null,
+            "image": "WINECLS250.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 69,
+        "fields": {
+            "category": 8,
+            "slug": "plastic_wine_glass_pack",
+            "sku": "WINEPLAS325",
+            "name": "6 Pack Plastic Wine Glass - 325ml",
+            "price": "15.99",
+            "rating": 2,
+            "description": "Perfect for outdoor events, our 6 Pack of Plastic Wine Glasses, each with a 325ml capacity, offers durability and convenience. These glasses provide a practical yet stylish solution for enjoying wine without the worry of breakage.",
+            "stock": 25,
+            "features": "6 pack, Volume: 325 ml each, Durable plastic, Ideal for outdoor and casual use",
+            "image_url": null,
+            "image": "WINEPLAS325.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 70,
+        "fields": {
+            "category": 9,
+            "slug": "shot_glass_girls_night",
+            "sku": "SHOTGN50",
+            "name": "Shot Glass / Girls Night - 50ml",
+            "price": "6.99",
+            "rating": 4,
+            "description": "Add fun to your girls' night with our 50ml Shot Glass. Its playful design is perfect for party settings, making it a great choice for a night out with friends.",
+            "stock": 40,
+            "features": "Volume: 50 ml, Fun and playful design, Ideal for parties",
+            "image_url": null,
+            "image": "SHOTGN50.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 71,
+        "fields": {
+            "category": 9,
+            "slug": "shot_glasses_multicolor",
+            "sku": "SHOTMUL30",
+            "name": "Shot Glasses / Multicolor - 30ml",
+            "price": "14.99",
+            "rating": 5,
+            "description": "Our Multicolor Shot Glasses, each holding 30ml, are perfect for adding a splash of color to any gathering. The set includes various vibrant colors, making it easy to keep track of your drink at parties.",
+            "stock": 30,
+            "features": "Set of multicolored glasses, Volume: 30 ml each, Bright and festive",
+            "image_url": null,
+            "image": "SHOTMUL30.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 72,
+        "fields": {
+            "category": 9,
+            "slug": "shot_glass_mini_boot",
+            "sku": "SHOTBOOT50",
+            "name": "Shot Glass / Mini Boot - 50ml",
+            "price": "8.99",
+            "rating": 4,
+            "description": "The Mini Boot Shot Glass is a quirky addition to your collection. With a 50ml capacity, this boot-shaped glass adds a fun twist to your shots, perfect for themed parties or as a unique gift.",
+            "stock": 20,
+            "features": "Volume: 50 ml, Boot-shaped design, Novelty item",
+            "image_url": null,
+            "image": "SHOTBOOT50.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 73,
+        "fields": {
+            "category": 9,
+            "slug": "shot_glass_clear",
+            "sku": "SHOTCLR60",
+            "name": "Shot Glass / Clear - 60ml",
+            "price": "4.99",
+            "rating": 5,
+            "description": "Our Clear Shot Glass, with a 60ml capacity, is a classic choice for any bar. Its simple and elegant design is versatile, perfect for serving a variety of spirits and liqueurs.",
+            "stock": 50,
+            "features": "Volume: 60 ml, Classic clear design, Versatile and durable",
+            "image_url": null,
+            "image": "SHOTCLR60.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 74,
+        "fields": {
+            "category": 10,
+            "slug": "potions_caribbean_jeff_berry",
+            "sku": "BKPCJEFF",
+            "name": "Berry's Potions of the Caribbean - Jeff Berry",
+            "price": "29.99",
+            "rating": 5,
+            "description": "Jeff Berry's 'Potions of the Caribbean' transports readers to the birthplace of tiki and tropical drink culture. The book is filled with fascinating historical anecdotes, exotic locales, and over 100 classic Caribbean cocktail recipes.",
+            "stock": 20,
+            "features": "Author: Jeff Berry, Over 100 recipes, Rich historical context, Essential for tiki enthusiasts",
+            "image_url": null,
+            "image": "BKPCJEFF.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 75,
+        "fields": {
+            "category": 10,
+            "slug": "oxford_spirits_cocktails",
+            "sku": "BKOXSPRTC",
+            "name": "The Oxford Companion to Spirits and Cocktails - Wondrich & RothBaum",
+            "price": "49.99",
+            "rating": 5,
+            "description": "This comprehensive guide by Wondrich & Rothbaum is a must-have for spirits and cocktail enthusiasts. 'The Oxford Companion to Spirits and Cocktails' offers an in-depth look into the world of spirits, their history, and cocktail recipes.",
+            "stock": 15,
+            "features": "Authors: Wondrich & Rothbaum, Comprehensive spirits guide, Historical insights, Cocktail recipes",
+            "image_url": null,
+            "image": "BKOXSPRTC.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 76,
+        "fields": {
+            "category": 10,
+            "slug": "fine_art_mixing_drinks",
+            "sku": "BKFAEMBURY",
+            "name": "The Fine Art of Mixing Drinks - David A. Embury",
+            "price": "35.99",
+            "rating": 5,
+            "description": "David A. Embury's 'The Fine Art of Mixing Drinks' is a classic in the mixology world. This book not only provides recipes but also delves into the philosophy and techniques behind crafting the perfect cocktail.",
+            "stock": 25,
+            "features": "Author: David A. Embury, Classic cocktail guide, Philosophical and technical insights, Cocktail recipes",
+            "image_url": null,
+            "image": "BKFAEMBURY.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 77,
+        "fields": {
+            "category": 10,
+            "slug": "cocktail_techniques_kazuo",
+            "sku": "BKCTKAZUO",
+            "name": "Cocktail Techniques - Kazuo Uyeda",
+            "price": "40.99",
+            "rating": 4,
+            "description": "Kazuo Uyeda's 'Cocktail Techniques' is a seminal work in the cocktail industry. Renowned for his precision and artistry, Uyeda shares his expertise in cocktail making, offering valuable insights into Japanese mixology.",
+            "stock": 18,
+            "features": "Author: Kazuo Uyeda, Japanese mixology techniques, In-depth cocktail craftsmanship, Elegant photography",
+            "image_url": null,
+            "image": "BKCTKAZUO.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 78,
+        "fields": {
+            "category": 11,
+            "slug": "bartenders_manual_harry_johnson",
+            "sku": "BKBMHJOHN",
+            "name": "Bartenders Manual - Harry Johnson",
+            "price": "27.99",
+            "rating": 5,
+            "description": "Harry Johnson's 'Bartenders Manual' is a seminal work in the world of bartending. First published in the late 19th century, it combines classic cocktail recipes with timeless wisdom and insights into the art of bartending.",
+            "stock": 15,
+            "features": "Author: Harry Johnson, Classic cocktail recipes, Timeless bartending wisdom, Historical insights",
+            "image_url": null,
+            "image": "BKBMHJOHN.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 79,
+        "fields": {
+            "category": 11,
+            "slug": "american_bar_frank_newman",
+            "sku": "BKABFNEWM",
+            "name": "American Bar - Frank P. Newman",
+            "price": "32.99",
+            "rating": 4,
+            "description": "Frank P. Newman's 'American Bar' is a classic text that captures the essence of early 20th-century American bartending. The book is a treasure trove of cocktail recipes and bar management tips from one of the era's most celebrated bartenders.",
+            "stock": 20,
+            "features": "Author: Frank P. Newman, Early 20th-century cocktails, Bar management tips, Historical perspective",
+            "image_url": null,
+            "image": "BKABFNEWM.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 80,
+        "fields": {
+            "category": 11,
+            "slug": "hoffman_house_guide_charley_mahoney",
+            "sku": "BKHHCMAHO",
+            "name": "Hoffman House Bartender's Guide - Charley Mahoney",
+            "price": "25.99",
+            "rating": 5,
+            "description": "Charley Mahoney's 'Hoffman House Bartender's Guide' is an iconic guidebook from one of New York's most famous pre-Prohibition bars. It offers a fascinating glimpse into the golden age of American bartending, with classic recipes and timeless techniques.",
+            "stock": 18,
+            "features": "Author: Charley Mahoney, Pre-Prohibition era recipes, Insight into historical bartending techniques",
+            "image_url": null,
+            "image": "BKHHCMAHO.webp"
+        }
     }
 ]
