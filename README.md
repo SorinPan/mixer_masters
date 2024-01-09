@@ -53,3 +53,37 @@ Mixer Masters is an e-commerce project built with django. The website focuses ma
 
 - As a **Shopper**, I can **create a wishlist** so that **I can save items I am interested in purchasing later**.
 - As a **Shopper**, I want to **review and comment on products** so that **I can share my experiences and opinions with other potential buyers**.
+
+## Database Schema
+
+![Database Schema](documentation/readme/database_schema.png)
+
+<details>
+<summary>Products App</summary>
+<br>
+
+#### Category Model
+
+| ID | Field | Type |
+| ---- | ---- | ---- |
+| name | CharField | max_length=254 |
+| friendly_name | CharField | max_length=254, null=True, blank=True |
+
+#### Product Model
+
+| ID | Field | Type |
+| ---- | ---- | ---- |
+| category | ForeignKey | Category, null=True, blank=True, on_delete=models.SET_NULL |
+| slug | SlugField | max_length=100, unique=True |
+| sku | CharField | max_length=254, null=True, blank=True |
+| name | CharField | max_length=254, unique=True |
+| price | DecimalField | max_digits=6, decimal_places=2 |
+| rating | PositiveSmallIntegerField | null=True |
+| description | TextField |  |
+| stock | PositiveSmallIntegerField | null=False, blank=False, default=0 |
+| features | TextField |  |
+| image | ImageField | null=True, blank=True |
+| image_url | URLField | max_length=1024, null=True, blank=True |
+  
+</details>
+
