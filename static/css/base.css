@@ -240,3 +240,10 @@ h1, h2, h3, h4, h5, h6 {
 .icon-sm {
     font-size: 0.675rem;
 }
+
+/*-------- PRODUCTS --------*/
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
