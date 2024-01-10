@@ -19,47 +19,49 @@
             <!-- Products -->
             <div class="row">
                 {% for product in products %}
-                    <div class="col-xl-3 col-lg-4 col-6">
-                        <div class="card h-100 border-0">
-                            {% if product.image %}
-                                <a href="">
-                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
-                                </a>
-                            {% else %}
-                                <a href="">
-                                    <img src="{{ MEDIA_URL }}placeholder_image.webp" alt="{{ product.name }}" class="card-img-top">
-                                </a>
-                            {% endif %}
-                            <div class="card-body pb-0">
-                                <p class="lead mb-1">${{ product.price }}</p>
-                                <h6 class="card-title">{{ product.name }}</h6>
-                                <!-- Category -->
-                                {% if product.category %}
-                                <span class="small">
-                                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                        <i class="fas fa-tag mr-2"></i>{{ product.category.friendly_name }}
+                    <div class="card-group col-xl-3 col-lg-4 col-6">
+                        <div class="product">
+                            <div class="card h-100 border-0">
+                                {% if product.image %}
+                                    <a href="">
+                                        <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top card-img">
                                     </a>
-                                </span>
+                                {% else %}
+                                    <a href="">
+                                        <img src="{{ MEDIA_URL }}placeholder_image.webp" alt="{{ product.name }}" class="card-img-top card-img">
+                                    </a>
                                 {% endif %}
-                            </div>
-                            <div class="card-footer bg-white pt-0 border-0 my-2">
-                                <div class="row">
-                                    <div class="col">
-                                         <!-- Stock -->
-                                        <span class="small text-muted">
-                                             <i class="fa-solid fa-warehouse mr-2"></i>
-                                             {% if product.stock == 0 %}
-                                                 <span class="text-danger">Out of Stock</span>
-                                            {% else %}
-                                                <span data-stock="{{ product.stock }}">{{ product.stock }}</span>
-                                            {% endif %}
-                                        </span>
-                                        <!-- Rating -->
-                                        {% if product.rating %}
-                                             <span class="small text-muted ml-3">
-                                                 <i class="fa-solid fa-star mr-2"></i>{{ product.rating }}
+                                <div class="card-body pb-0">
+                                    <p class="lead mb-1">${{ product.price }}</p>
+                                    <h6 class="card-title">{{ product.name }}</h6>
+                                    <!-- Category -->
+                                    {% if product.category %}
+                                    <span class="small">
+                                        <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                                            <i class="fas fa-tag mr-2"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </span>
+                                    {% endif %}
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 my-2">
+                                    <div class="row">
+                                        <div class="col">
+                                            <!-- Stock -->
+                                            <span class="small text-muted">
+                                                <i class="fa-solid fa-warehouse mr-2"></i>
+                                                {% if product.stock == 0 %}
+                                                    <span class="text-danger">Out of Stock</span>
+                                                {% else %}
+                                                    <span data-stock="{{ product.stock }}">{{ product.stock }}</span>
+                                                {% endif %}
                                             </span>
-                                        {% endif %}
+                                            <!-- Rating -->
+                                            {% if product.rating %}
+                                                <span class="small text-muted ml-3 float-end">
+                                                    <i class="fa-solid fa-star mr-2"></i>{{ product.rating }}
+                                                </span>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
