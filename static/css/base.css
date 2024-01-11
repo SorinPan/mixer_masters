@@ -77,6 +77,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--auburn);
 }
 
+.btn-black {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.btn-black:hover {
+    color: var(--white);
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
 /*-------- NAV BAR --------*/
 
 .info-bar {
@@ -260,4 +275,22 @@ h1, h2, h3, h4, h5, h6 {
 .product:hover {
     transform: scale(1.1);
     transition: all 0.6s ease;
+}
+
+/*-------- PRODUCT DETAILS --------*/
+
+.input-group .input-group-prepend .btn,
+.input-group .input-group-append .btn,
+.input-group .form-control {
+    border-color: #ced4da;
+}
+.input-group .form-control {
+    border-left: 0;
+    border-right: 0;
+}
+.input-group .input-group-prepend .btn {
+    border-right: 0;
+}
+.input-group .input-group-append .btn {
+    border-left: 0;
 }
