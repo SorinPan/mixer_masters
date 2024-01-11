@@ -116,39 +116,39 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="accessoriesDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
               <div class="dropdown-menu" aria-labelledby="accessoriesDropdown">
-                <a class="dropdown-item" href="#">Shakers </a>
-                <a class="dropdown-item" href="#">Mixing Tools </a>
-                <a class="dropdown-item" href="#">Bar Tools </a>
-                <a class="dropdown-item" href="#">All Accessories </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=shakers">Shakers </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=mixing_tools">Mixing Tools </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=bar_tools">Bar Tools </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=shakers,mixing_tools,bar_tools">All Accessories </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="ingredientsDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingredients</a>
               <div class="dropdown-menu" aria-labelledby="ingredientsDropdown">
-                <a class="dropdown-item" href="#">Bitters & Mixers </a>
-                <a class="dropdown-item" href="#">Garnishes </a>
-                <a class="dropdown-item" href="#">Syrups & Sweeteners </a>
-                <a class="dropdown-item" href="#">All Ingredients </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=bitters_mixers">Bitters & Mixers </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=garnishes">Garnishes </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=syrups_sweeteners">Syrups & Sweeteners </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=bitters_mixers,garnishes,syrups_sweeteners">All Ingredients </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="drinkwareDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drinkware</a>
               <div class="dropdown-menu" aria-labelledby="drinkwareDropdown">
-                <a class="dropdown-item" href="#">Cocktail Glasses </a>
-                <a class="dropdown-item" href="#">Wine Glasses </a>
-                <a class="dropdown-item" href="#">Shot Glasses </a>
-                <a class="dropdown-item" href="#">All Drinkware </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=cocktail_glasses">Cocktail Glasses </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=wine_glasses">Wine Glasses </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=shot_glasses">Shot Glasses </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=bitters_mixers,wine_glasses,shot_glasses">All Drinkware </a>
               </div>
             </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="booksDropdown" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
               <div class="dropdown-menu" aria-labelledby="booksDropdown">
-                <a class="dropdown-item" href="#">Mixology </a>
-                <a class="dropdown-item" href="#">Bartending </a>
-                <a class="dropdown-item" href="#">All Books </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=mixology">Mixology </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=bartending">Bartending </a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=mixology,bartending">All Books </a>
               </div>
             </li>
           </ul>

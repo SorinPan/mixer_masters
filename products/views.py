@@ -11,6 +11,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
+    categories = None
 
     if 'q' in request.GET:
             query = request.GET['q']
@@ -19,14 +20,19 @@ def all_products(request):
                     please try again")
                 return redirect(reverse('products'))
 
-            queries = Q(
-                name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+    
+    if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
 
 
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
     }
 
     return render(request, 'products/products.html', context)
