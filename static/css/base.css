@@ -277,6 +277,15 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.6s ease;
 }
 
+.product-grid-header {
+    display: flex;
+    margin-bottom: 1rem;
+    color: #868e96;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /*-------- PRODUCT DETAILS --------*/
 
 .input-group .input-group-prepend .btn,

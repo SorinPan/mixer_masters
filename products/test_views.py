@@ -41,9 +41,15 @@ class ProductViewsTest(TestCase):
         self.assertTemplateUsed(response, 'products/product_detail.html')
         self.assertEqual(response.context['product'], product)
     
-    def test_all_products_view_category(self):
+    def test_products_view_category(self):
         response = self.client.get(reverse('products') + '?category=test_category')
         self.assertEqual(response.status_code, 200)
         self.assertIn('products', response.context)
         # Checks that only products from Category1 are returned
         self.assertTrue(all(product.category.name == 'test_category' for product in response.context['products']))
+
+    def test_products_sort_price_descending(self):
+        response = self.client.get(reverse('products') + '?sort=price&direction=desc')
+        self.assertEqual(response.status_code, 200)
+        products = list(response.context['products'])
+        self.assertSequenceEqual(products, list(Product.objects.order_by('-price')))

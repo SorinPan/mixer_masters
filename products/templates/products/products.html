@@ -16,6 +16,47 @@
                     </p>
                 </div>
             </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    {% if current_categories %}
+                        {% for c in current_categories %}
+                            <li class="breadcrumb-item">
+                                <a href="{% url 'products' %}?category={{ c.name }}">{{ c.friendly_name }}</a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+                    <li class="breadcrumb-item active" aria-current="page">{{ current_page_name }}</li>
+                </ol>
+            </nav>
+
+            <div class="product-grid-header">
+                <div class="me-3 mb-3">
+                    <p class="text-muted mt-3">
+                        Showing <strong>{{ products|length }}</strong> Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+                
+                <div class="mb-3 d-flex align-items-center">
+                    <div class="sort-select-wrapper">
+                        <span class="d-inline-block me-2">Sort by</span>
+                        <select id="sort-selector" class="custom-select custom-select-sm border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Default</option>
+                            <option value="price_asc" {%if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {%if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="rating_asc" {%if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                            <option value="rating_desc" {%if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                            <option value="name_asc" {%if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                            <option value="name_desc" {%if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                            <option value="category_asc" {%if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {%if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z to A)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
             <!-- Products -->
             <div class="row">
                 {% for product in products %}
