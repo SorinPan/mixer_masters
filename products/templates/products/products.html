@@ -114,3 +114,30 @@
     </div>
 </div>
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+        <!-- Script for the sort selector -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var sortSelector = document.getElementById('sort-selector');
+                sortSelector.addEventListener('change', function() {
+                    var currentUrl = new URL(window.location);
+                    var selectedVal = this.value;
+                    
+                    if(selectedVal != "reset"){
+                        var sortParams = selectedVal.split("_");
+                        var sort = sortParams[0];
+                        var direction = sortParams[1];
+                        currentUrl.searchParams.set("sort", sort);
+                        currentUrl.searchParams.set("direction", direction);
+                    } else {
+                        currentUrl.searchParams.delete("sort");
+                        currentUrl.searchParams.delete("direction");
+                    }
+                    window.location.replace(currentUrl);
+                });
+            });
+        </script>
+{% endblock %}
