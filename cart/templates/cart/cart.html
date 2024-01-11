@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Shopping Cart{% endblock %}
+
+{% block content %}
+    <!-- Cart Hero Content -->
+    <section class="page-hero">
+        <h1>Shopping Cart</h1>
+            <div class="row mb-5">   
+                <div class="col-xl-8">
+                    <p class="lead text-muted">
+                        Explore our meticulously curated selection of premium bar tools, exquisite glassware, and expert mixology resources.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- Cart Content -->
+    <section>
+      <div class="container">
+
+      </div>  
+    </section>
+<!-- Back to top button -->
+<div class="back-to-top">
+    <a class="btn btn-back-to-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+        <!-- Back to top -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var backToTopButton = document.querySelector('.back-to-top');
+                if (backToTopButton) {
+                    backToTopButton.addEventListener('click', function(e) {
+                        window.scrollTo(0, 0);
+                    });
+                }
+            });
+        </script>
+
+        <!-- Script for the sort selector -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var sortSelector = document.getElementById('sort-selector');
+                sortSelector.addEventListener('change', function() {
+                    var currentUrl = new URL(window.location);
+                    var selectedVal = this.value;
+                    
+                    if(selectedVal != "reset"){
+                        var sortParams = selectedVal.split("_");
+                        var sort = sortParams[0];
+                        var direction = sortParams[1];
+                        currentUrl.searchParams.set("sort", sort);
+                        currentUrl.searchParams.set("direction", direction);
+                    } else {
+                        currentUrl.searchParams.delete("sort");
+                        currentUrl.searchParams.delete("direction");
+                    }
+                    window.location.replace(currentUrl);
+                });
+            });
+        </script>
+{% endblock %}

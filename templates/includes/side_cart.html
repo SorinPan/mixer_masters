@@ -1,0 +1,43 @@
+<!-- Sidebar Cart Modal-->
+<div class="offcanvas offcanvas-end" id="sidebarCart" tabindex="-1" aria-labelledby="sidebarCart">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Products</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body  sidecart-content">
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    {% for item in bag_items %}
+                        <div class="row">
+                            <div class="col-6">
+                                {% if item.product.image %}
+                                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid">
+                                {% else %}
+                                    <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ item.product.name }}" class="img-fluid">
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                 <p class="my-0">{{ item.product.name }}</p>
+                                 <p class="my-0 text-muted">{{ item.product.sku }}</p>
+                                 <p class="lead mb-1">${{ product.price }}</p>
+                            </div>
+                        </div>
+                     {% endfor %}
+                <!-- Empty Cart -->
+                {% else %}
+                    <p class="lead mb-5">Your bag is currently empty. why not have a look at our latest special offers?</p>
+                {% endif %}
+            </div>
+        </div>
+        <div>
+          <div class="w-100">
+            <p class="lead mb-4">Total: <span class="float-right">$254.99</span></p>
+            <div class="d-grid gap-3">
+                <a class="btn btn-outline-dark" href="{% url 'view_cart' %}">View cart</a>
+                <a class="btn btn-dark" href="#">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
