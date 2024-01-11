@@ -24,6 +24,15 @@ class ProductViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
         self.assertIn('products', response.context)
+        self.assertEqual(len(response.context['products']), Product.objects.count())
+    
+    def test_products_view_search(self):
+        response = self.client.get(reverse('products') + '?q=Test')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('products', response.context)
+        # Check that the search returns the correct products
+        self.assertEqual(len(response.context['products']), 1)
+        self.assertEqual(response.context['products'][0].name, 'Test Product')
 
     def test_product_detail_view(self):
         product = Product.objects.get(slug='test-product')
