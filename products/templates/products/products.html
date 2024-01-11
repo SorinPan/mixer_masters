@@ -113,10 +113,28 @@
         </div>
     </div>
 </div>
+<!-- Back to top button -->
+<div class="back-to-top">
+    <a class="btn btn-back-to-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
+
+        <!-- Back to top -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var backToTopButton = document.querySelector('.back-to-top');
+                if (backToTopButton) {
+                    backToTopButton.addEventListener('click', function(e) {
+                        window.scrollTo(0, 0);
+                    });
+                }
+            });
+        </script>
 
         <!-- Script for the sort selector -->
         <script>
