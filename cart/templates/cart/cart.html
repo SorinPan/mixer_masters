@@ -10,16 +10,32 @@
             <div class="row mb-5">   
                 <div class="col-xl-8">
                     <p class="lead text-muted">
-                        Explore our meticulously curated selection of premium bar tools, exquisite glassware, and expert mixology resources.
+                        You have 3 items in your shopping cart
                     </p>
                 </div>
             </div>
     </section>
     <!-- Cart Content -->
     <section>
-      <div class="container">
-
-      </div>  
+        <div class="container">
+            <div class="row mb-5"> 
+              <div class="col-lg-8 pe-xl-5">
+                <div class="cart mb-5">
+                    {% if bag_items %}
+                        <div class="cart-body">
+                            
+                        </div>
+                    {% else %}
+                        <p class="lead mb-5">You have no items in your shopping cart!</p>
+                        <a href="{% url 'products' %}" class="btn btn-black mt-2">
+                            <span class="mr-2"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span>Back to Shop</span>
+                        </a>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>  
     </section>
 <!-- Back to top button -->
 <div class="back-to-top">
