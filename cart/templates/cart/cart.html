@@ -21,10 +21,10 @@
             <div class="row mb-5"> 
               <div class="col-lg-8 pe-xl-5">
                 <div class="cart mb-5">
-                    {% if bag_items %}
+                    {% if cart_items %}
                         <div class="cart-body">
                             
-                        </div>
+                        </div>   
                     {% else %}
                         <p class="lead mb-5">You have no items in your shopping cart!</p>
                         <a href="{% url 'products' %}" class="btn btn-black mt-2">

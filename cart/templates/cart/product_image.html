@@ -1,0 +1,7 @@
+{% if item.product.image %}
+    <a href="{% url 'product_detail' product.id %}" target="_blank">
+        <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+    </a>
+{% else %}
+    <img class="img-fluid" src="{{ MEDIA_URL }}placeholder_image.webp" alt="{{ item.product.name }}">
+{% endif %}
