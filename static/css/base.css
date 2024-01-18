@@ -311,3 +311,19 @@ h1, h2, h3, h4, h5, h6 {
 .input-group .input-group-append .btn {
     border-left: 0;
 }
+
+/*-------- CART --------*/
+
+.cart-item-img {
+    max-width: 100px;
+}
+
+.cart-item {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+  
+.cart-item:last-of-type {
+    border-bottom: none;
+}
