@@ -1,0 +1,52 @@
+<script>
+    function handleEnableDisable(itemId) {
+        let stock = parseInt(document.querySelector(`.increment-qty_${itemId}`).getAttribute('data-stock'));
+        let currentValue = parseInt(document.querySelector(`.id_qty_${itemId}`).value);
+        let minusDisabled = currentValue < 2;
+        let plusDisabled = currentValue >= stock;
+
+        document.querySelector(`.decrement-qty_${itemId}`).disabled = minusDisabled;
+        document.querySelector(`.increment-qty_${itemId}`).disabled = plusDisabled;
+    }
+
+    // Ensure proper enabling/disabling of all inputs on page load
+    let allQtyInputs = document.querySelectorAll('.qty_input');
+    allQtyInputs.forEach(input => {
+        let itemId = input.getAttribute('data-item_id');
+        handleEnableDisable(itemId);
+    });
+
+    // Check enable/disable every time the input is changed
+    allQtyInputs.forEach(input => {
+        input.addEventListener('change', function() {
+            let itemId = this.getAttribute('data-item_id');
+            handleEnableDisable(itemId);
+        });
+    });
+
+    // Increment Quantity
+    let incrementButtons = document.querySelectorAll('.increment-qty');
+    incrementButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            let itemId = this.getAttribute('data-item_id');
+            let closestInput = this.closest('.input-group').querySelector('.qty_input');
+            let currentValue = parseInt(closestInput.value);
+            closestInput.value = currentValue + 1;
+            handleEnableDisable(itemId);
+        });
+    });
+
+    // Decrement Quantity
+    let decrementButtons = document.querySelectorAll('.decrement-qty');
+    decrementButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            let itemId = this.getAttribute('data-item_id');
+            let closestInput = this.closest('.input-group').querySelector('.qty_input');
+            let currentValue = parseInt(closestInput.value);
+            closestInput.value = currentValue - 1;
+            handleEnableDisable(itemId);
+        });
+    });
+</script>
