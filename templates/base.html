@@ -203,7 +203,11 @@
 
     <!-- Messages -->
     {% if messages %}
-        <div class="message-container"></div>
+        <div class="message-container">
+          {% for message in messages %}
+              {% include 'includes/toasts/toast_success.html' %}
+          {% endfor %}
+        </div>
     {% endif %}
 
     <!-- Page headers -->
@@ -221,6 +225,14 @@
     
     <!-- CUSTOM SCRIPTS -->
     {% block postloadjs %}
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+          var toastList = toastElList.map(function(toastEl) {
+              return new bootstrap.Toast(toastEl).show();
+          });
+      });
+      </script>
     {% endblock %}
   </body>
 </html>
