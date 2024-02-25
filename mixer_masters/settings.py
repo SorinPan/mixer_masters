@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
+    "crispy_bootstrap5",
 
     # My apps
     'home',
@@ -83,6 +84,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'cart.contexts.cart_contents',
             ],
             'builtins': [
@@ -92,6 +94,8 @@ TEMPLATES = [
         },
     },
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
