@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
+    # Other
+    'crispy_forms',
+
     # My apps
     'home',
     'products',
@@ -82,9 +85,15 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
