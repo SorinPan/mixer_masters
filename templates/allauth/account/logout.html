@@ -4,18 +4,23 @@
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Out" %}</h1>
+{% block inner-content %}
+  <div class="container auth my-5 py-3">
+    <h3 class="text-center text-uppercase my-3">{% trans "Sign Out" %}</h3>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+    <p class="px-4 text-center">{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
-
+    <div class="px-4">
+      <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <div class="row px-2 py-3">
+            <button class="btn btn-outline-dark" type="submit">{% trans 'Sign Out' %}</button>
+          </div>
+      </form>
+    </div>
+  </div>
 
 {% endblock %}
