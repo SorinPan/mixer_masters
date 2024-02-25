@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Sitemap: https://mixer-masters-e6fd6c2a39a2.herokuapp.com/sitemap.xml
