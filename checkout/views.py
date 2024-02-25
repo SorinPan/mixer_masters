@@ -6,7 +6,7 @@ from django.conf import settings
 from .forms import OrderForm
 from products.models import Product
 from .models import Order, OrderLineItem
-
+from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from cart.contexts import cart_contents
 
