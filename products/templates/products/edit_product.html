@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Product Management - Edit Product{% endblock %}
+
+
+{% block content %}
+    <!-- Checkout Hero Content -->
+    <section class="page-hero container mt-4 py-5">
+        <h1>Product Management</h1>
+            <div class="row mb-5">   
+                <div class="col-xl-8">
+                    <p class="lead text-muted">
+                        Manage your inventory seamlessly with real-time updates.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- Checkout Content -->
+    <section>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 offset-md-3">
+                    <h4 class="text-center">Edit a Product</h4>
+                    <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {% if field.name != 'image' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        {% endfor %}
+                        <div class="text-right">
+                            <a class="btn btn-dark my-2" href="{% url 'products' %}">
+                                <span class="mr-2"><i class="fa-solid fa-xmark"></i></span>    
+                                <span>Cancel</span>
+                            </a>
+                            <button class="btn btn-outline-dark ml-2" type="submit">
+                                <span class="mr-2"><i class="fa-regular fa-pen-to-square"></i></span>
+                                <span>Update Product</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </section>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+        <script>
+            $('#new-image').change(function() {
+                var file = $('#new-image')[0].files[0];
+                $('#filename').text(`Image will be set to: ${file.name}`);
+            });
+        </script>
+{% endblock %}
