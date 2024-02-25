@@ -92,10 +92,23 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--black);
 }
 
+
+
+/* Allauth form formatting */
+
 .auth {
     border: 1px solid var(--grey);
     box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.15);
 }
+
+.allauth-form-inner-content input {
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
 
 /*-------- TOASTS --------*/
 
