@@ -37,6 +37,16 @@
     border: 0px solid var(--grey);
 }
 
+select,
+select option {
+    color: var(--black);
+}
+
+select:invalid,
+selection option[value=""] {
+    color: var(--grey) !important;
+}
+
 /* PAYMENT LOADING OVERLAY */
 #loading-overlay {
     display: none;
