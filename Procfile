@@ -1,1 +1,1 @@
-web: gunicorn mixer_masters.wsgi:application
+web: gunicorn mixer_masters.wsgi
