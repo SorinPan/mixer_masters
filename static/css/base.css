@@ -97,8 +97,8 @@ h1, h2, h3, h4, h5, h6 {
 .message-container {
     position: fixed;
     top: 100px;
-    right: 15px;
-    z-index: 9999999;
+    right: 35px;
+    z-index: 99999;
 }
 
 .custom-toast {
@@ -107,6 +107,42 @@ h1, h2, h3, h4, h5, h6 {
 
 .toast-capper {
     height: 5px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid var(--black);
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colours copied from bootstrap */
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+/* sizes the bag section of toast */
+.cart-notification-wrapper {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /*-------- NAV BAR --------*/
